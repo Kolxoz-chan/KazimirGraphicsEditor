@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8" />
+	<title>Kazimir Graphics Editor</title>
+
+	<script src="engine/constants.js"></script>
+	<script src="engine/objects.js"></script>
+	<script src="engine/gui.js"></script>
+	<script src="engine/base_components.js"></script>
+	<script src="engine/action_components.js"></script>
+	<script src="engine/container_components.js"></script>
+	<script src="engine/mouse_components.js"></script>
+	<script src="engine/components.js"></script>
+	<script src="engine/engine.js"></script>
+
+	<script src="scripts/tools.js" defer></script>
+	<script src="scripts/custom_components.js" defer></script>
+	<script src="scripts/main.js" defer></script>
+	
+	<style>
+		.vbox-layout > *
+		{
+			vertical-align: middle;
+			display: block;
+		}
+		
+		.hbox-layout > div
+		{
+			display: inline-block;
+			height: 100%;
+			vertical-align: top;
+		}
+		
+		#main-block
+		{
+			//width: 80%;
+			//margin:0 auto;
+		}
+	</style>
+</head>
+	<body>
+		<div id="main-block" class="hbox-layout">
+			<div id="tools-block" class="vbox-layout">
+				<button><img src="icons/select.png"></button>
+				<button><img src="icons/circle.png"></button>
+				<button><img src="icons/pencil.png"></button>
+				<button><img src="icons/polygon.png"></button>
+			</div>
+			<div id="game-block"><div>
+			<div id="properties-block" class="vbox-layout"></div>
+		</div>
+	</body>
+</html>
